@@ -9,15 +9,15 @@
 //my parameters are brand,i
 //my return is to display new array with a new length
 
-function guitar(brand,index){
+function guitar(brand, index) {
   let gibson = [];
-  for(let i = 0; i < index; i++){
+  for (let i = 0; i < index; i++) {
     gibson.push(brand);
   }
-console.log(gibson);
+  console.log(gibson);
 }
 
-guitar("brand",3)
+guitar("brand", 3)
 
 
 
@@ -36,9 +36,9 @@ guitar("brand",3)
 // Put your answer below -------------------------
 
 
-var boat =[2,3,4];
+var boat = [2, 3, 4];
 
-function number(house){
+function number(house) {
   var car = house.reverse();
   console.log(car);
 }
@@ -62,7 +62,17 @@ number(boat);
 
 
 
+function dude(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == 0 || arr[i] == NaN || arr[i] == null || arr[i] == false || arr[i] == "" || arr[i] == undefined) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+  return arr;
+}
 
+console.log(dude([8, "apple", 0, false, "", 4]));
 
 
 
@@ -80,8 +90,13 @@ number(boat);
 
 // Put your answer below -------------------------
 
+function people(input){
+  const person = [...input];
+  const crowd = [];
+  while(person.length) {
 
-
+  }
+}
 
 
 
@@ -98,9 +113,12 @@ number(boat);
 
 // Put your answer below -------------------------
 
+var arr = ["gibson", "fender", "elliott", "gibson", "fender", "gretch", "nova"];
 
-
-
+function onlyOne(data) {
+  return data.filter((value, index) => data.indexOf(value) === index);
+}
+console.log(onlyOne(arr));
 
 
 
@@ -118,7 +136,6 @@ number(boat);
 // ---------------------
 
 // Put your answer below -------------------------
-
 
 
 
@@ -148,7 +165,6 @@ number(boat);
 // ---------------------
 
 // Put your answer below -------------------------
-
 
 
 
