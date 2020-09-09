@@ -5,7 +5,19 @@
 
 // Put your answer below -------------------------
 
+//my function is guitar
+//my parameters are brand,i
+//my return is to display new array with a new length
 
+function guitar(brand,index){
+  let gibson = [];
+  for(let i = 0; i < index; i++){
+    gibson.push(brand);
+  }
+console.log(gibson);
+}
+
+guitar("brand",3)
 
 
 
@@ -24,8 +36,13 @@
 // Put your answer below -------------------------
 
 
+var boat =[2,3,4];
 
-
+function number(house){
+  var car = house.reverse();
+  console.log(car);
+}
+number(boat);
 
 
 
@@ -39,6 +56,10 @@
 // ---------------------
 
 // Put your answer below -------------------------
+
+
+
+
 
 
 
