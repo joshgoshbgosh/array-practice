@@ -90,13 +90,25 @@ console.log(dude([8, "apple", 0, false, "", 4]));
 
 // Put your answer below -------------------------
 
-function people(input){
-  const person = [...input];
-  const crowd = [];
-  while(person.length) {
 
+var array4 = [
+  ['name', 'Charlie'],         //array name declared
+  ['color', 'brown'],
+  ['age', 10]
+];
+
+function combine(arr) {
+  const obj = {};                    //function set up and for loop for obj
+  for (let i = 0; i < arr.length; i++) {
+    obj[arr[i][0]] = arr[i][1];
   }
-}
+  return obj;
+};
+console.log(combine([
+  ['name', 'Charlie'],
+  ['color', 'brown'],
+  ['age', 10]
+]))
 
 
 
@@ -138,9 +150,28 @@ console.log(onlyOne(arr));
 // Put your answer below -------------------------
 
 
+var ball = [1, 2, 3, 4];
+var bat = [1, 2, 3, 4, 5];        //array declaration
 
+function myFunction(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;                       //if statement
+  }
+  arr1 = arr1.sort(function(a, b) {
+    return a - b;
+  })
+  arr2 = arr2.sort(function(a, b) {
+    return a - b;
+  })
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {                  //for loop for arguments
+      return false;
+    }
 
-
+  }
+  return true;
+};
+console.log(myFunction(ball, bat));
 
 
 
